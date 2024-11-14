@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "application#hello"
+
+  # Define a route that maps to a controller action
+  get "/goodbye" => "application#goodbye"
 end
